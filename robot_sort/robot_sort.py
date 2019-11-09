@@ -96,28 +96,42 @@ class SortingRobot:
         """
         Sort the robot's list.
         """
-        # self.set_light_on()
+        self.set_light_on()
 
-        while(self.can_move_right()):
+        while(self.light_is_on()):
             print('first while')
             self.set_light_off()
+            print('before Swap')
+            print(self._item, self._position, "item, position")
+            # self.swap_item()
+            print(self._item, self._position, "item, position")
+            print('after Swap')
+            self.move_right()
             while(self.can_move_right()):
                 print('running while')
                 self.swap_item()
                 self.move_right()
+                print(self._item, self._position, "item, position AFTER MOOVE")
                 if self.compare_item() == 1:
                     print('in if')
                     self.swap_item()
                     # self.move_right()
                     self.set_light_on()
-            if not self.light_is_on():
-                break
+                    print(self._item, self._position, "item, position")
+        # return self
+        
+
+
+            # if not self.light_is_on():
+            #     print('in SECOND if')
+            #     # break
+            #     continue
 
             # if self.compare_item() == -1:
             #     print('in second if')
 
 
-            print(self._item, self._position)
+            # print(self._item, self._position)
 
 
 

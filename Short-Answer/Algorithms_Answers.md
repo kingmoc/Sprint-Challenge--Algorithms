@@ -2,13 +2,15 @@
 
 ## Exercise I
 
-a) O(n)
+a) O(n) 
+    This is becausee the while will run n * n * n times so as n get bigger the operations wll increase - that is reduces to just n.  Inside the while loop is just multplication and doesn't increase based on n. 
 
 
 b) O(n^2)
+    This is classic nested looping.  The for loop is based on n items so that is O(n). The while operations based on n operation as well so that makes it n^2
 
-
-c) O(1)
+c) O(n)
+    All the ops are basically constant so my first thought was O(1).  But because of the recursive nature and the function is calling itself makes that n. So the biggest wins.  
 
 ## Exercise II
 
