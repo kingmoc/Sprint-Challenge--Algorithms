@@ -17,19 +17,9 @@ def count_th(word):
             return 0
 
         if new_string.find(oc) != -1:
-            # print('in third if')
-            # print(ct, "---- before -----")
             ct = ct+1
-            # print(ct, "---- after -----")
-            # print(new_string, 'before')
-            # print(new_string.find(oc), 'index of th')
             new_string[:2]
-            # print(new_string, "after slick")
-            # if new_string[new_string.find(oc)-1] == 't':
-            #      new_string[:new_string.find(oc)-1]
-            #      print(new_string, "after remove of t")
-            new_string = new_string.replace(oc,'', 1)
-            # print(new_string, 'after')
+            new_string = new_string.replace(oc,' ', 1)
             inner(new_string)
         return ct
 
@@ -38,6 +28,6 @@ def count_th(word):
 
 # print(count_th('erthothdfadfafdTh'))
 # print(count_th('abcthxyz'))
-print(count_th('thhtthht'))
+# print(count_th('thhtthht'))
 
 

@@ -3,7 +3,7 @@
 ## Exercise I
 
 a) O(n) 
-    This is becausee the while will run n * n * n times so as n get bigger the operations wll increase - that is reduces to just n.  Inside the while loop is just multplication and doesn't increase based on n. 
+    This is becausee the while will run n * n * n times so as n get bigger the operations wll increase - that reduces to just n.  Inside the while loop is just multplication and doesn't increase based on n. 
 
 
 b) O(n^2)
